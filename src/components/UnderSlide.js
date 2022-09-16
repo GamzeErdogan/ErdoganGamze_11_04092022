@@ -15,7 +15,7 @@ const UnderSlide = ({cardItem}) => {
           </div>
           <div className='hostRond-div'>
               <p className='hostName'>{cardItem.host.name}</p>
-              <div className='rond'></div>
+              <img className='rond' src={cardItem.host.picture} alt="" />
           </div>
       </div>
       <div className='tagAndStarContainer'>

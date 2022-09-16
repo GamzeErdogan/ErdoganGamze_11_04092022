@@ -5,6 +5,7 @@ import ContainerCard from "../components/ContainerCard";
 import styled from 'styled-components'
 import { useContext } from 'react'
 import { dataContext } from '../context'
+import Loader from '../components/Loader';
 
 
 const ContainerLogementsDiv = styled.div`
@@ -18,10 +19,9 @@ const ContainerLogementsDiv = styled.div`
     border-radius: 15px;
 `
 function Home() {
-  const { data:datas } = useContext(dataContext);
-  
-//   const { loading, data: datas } = useFetch("http://localhost:3000/data/logements.json");
-// if (loading) return <Loader />
+  const {loading, data:datas } = useContext(dataContext);
+ 
+if (loading) return <Loader />
 
   return (
     <div>

@@ -9,7 +9,7 @@ export const DataProvider = ({children}) =>{
     if (loading) return <Loader />
        
 return (
-    <dataContext.Provider value={{data: datas}}>
+    <dataContext.Provider value={{loading,data: datas}}>
         {children}
     </dataContext.Provider>
 )

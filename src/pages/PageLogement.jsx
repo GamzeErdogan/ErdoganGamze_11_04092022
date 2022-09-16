@@ -3,13 +3,14 @@ import {useParams} from 'react-router-dom';
 import SlideShow from '../components/SlideShow';
 import { useContext } from 'react'
 import { dataContext } from '../context'
+import Loader from '../components/Loader';
 
 
 
 const PageLogement = () => {
     const {id} = useParams();
-    const { data:datas} = useContext(dataContext);
-    
+    const { loading, data:datas} = useContext(dataContext);
+    if (loading) return <Loader />
   return (
     <div>
         {

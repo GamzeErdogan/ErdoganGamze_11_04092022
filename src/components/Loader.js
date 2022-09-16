@@ -1,9 +1,8 @@
 import React from 'react'
-import '../styles/loader.css'
 
 const Loader = () => {
     return (
-        <div className="lds-ripple"><div></div><div></div></div>
+        <div style={{ borderColor:'blue' }} className="lds-ripple"><div style={{ borderColor:' white' }} color={'pink'}></div><div style={{ borderColor: 'yellow' }}></div></div>
     )
 }
 
