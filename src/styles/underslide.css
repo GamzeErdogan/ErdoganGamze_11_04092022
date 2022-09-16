@@ -1,0 +1,61 @@
+.titleDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 10px;
+    /* align-items: center; */
+}
+.colorTitle{
+    color: #ff6060;
+    /* font-family: Montserrat; */
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 0;
+    font-weight: 100;
+    
+}
+.location{
+    color: #ff6060;
+    font-family: Montserrat;
+    font-size: 18px; 
+    margin-top: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+.hostName{
+    width: 50px;
+    font-size: 18px;
+    color: #ff6060;
+}
+.rond{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    background-color: #c4c4c4;
+}
+.hostRond-div{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.tagsDiv{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center; 
+    /* margin-left: 30px; */
+}
+.tagAndStarContainer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 0 30px;
+}

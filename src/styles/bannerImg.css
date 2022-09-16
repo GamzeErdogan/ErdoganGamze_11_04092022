@@ -1,0 +1,17 @@
+.bannerDiv-dimension{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;;
+}
+.bannerDiv-dimension img{
+    border-radius: 25px;
+    width: 100%;
+}
+.title{
+    color: white;
+    position: absolute;
+    top:10%;
+    left:25%;
+    font-size: 55px;
+}
