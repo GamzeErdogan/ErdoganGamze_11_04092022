@@ -20,8 +20,8 @@ const UnderSlide = ({cardItem}) => {
       </div>
       <div className='tagAndStarContainer'>
           <div className='tagsDiv'>
-            {cardItem.tags.map(tag =>
-              <TagsInPageLogement tagInPageLogement={tag}/>)}
+            {cardItem.tags.map((tag,index) =>(
+              <TagsInPageLogement key={index} tagInPageLogement={tag}/>))}
           </div>
           <div>
               <Star rating={cardItem.rating} />         

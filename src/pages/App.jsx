@@ -7,7 +7,6 @@ import Page404 from "./Page404";
 import PageLogement from "./PageLogement";
 import { DataProvider } from "../context";
 
-
 function App() {
  
   return (

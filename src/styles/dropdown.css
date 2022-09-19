@@ -7,12 +7,11 @@
     width: 100%;
     height: fit-content;
 }
-.dropdown--description{
-    height: 150px;
-}
+
 .dropdown--description p{
     margin: 15px;
     font-size: 18px;
+    font-weight: 400;
 }
 .dropUpIcon{
     width: 15px;
@@ -21,4 +20,9 @@
 .dropDownIcon{
     width: 25px;
     height: 25px;
+}
+@media screen and (max-width: 500px){
+    .dropdown--description p{
+        font-size: 16px;
+    }
 }

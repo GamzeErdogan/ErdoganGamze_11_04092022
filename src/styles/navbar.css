@@ -1,12 +1,5 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url(../font/Montserrat-Regular.ttf);
-    /* src: url(../font/Montserrat-Bold.ttf); */
-    
-}
-.nav-style{
+.nav-style a{
     color: #FF6060;
-    font-family: Montserrat;
     font-size: 24px;
     font-weight: 500;
     line-height: 34px;
@@ -14,11 +7,22 @@
     text-align: right;
     width: 116px;
     height: 34px;
+    text-decoration: none;
 }
+/* .nav-style a :active{
+    text-decoration: underline;
+    color:black;
+} */
+
 .nav-flex{
     display: flex;
     justify-content:space-between;
     gap: 20px;
     align-items: center;
     list-style: none;
+}
+@media screen and (max-width:500px){
+    .nav-style a{
+        font-size: 16px;
+    }
 }

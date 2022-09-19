@@ -1,6 +1,7 @@
 import React from 'react'
 import starRed from '../assets/starRed.png'
 import starGray from '../assets/starGray.png'
+import '../styles/star.css'
 
 const Star = ({rating}) => {
     const ratingStar = parseInt(rating);
@@ -8,7 +9,7 @@ const Star = ({rating}) => {
     const stars = [];
     for(var i=0; i< 5; i++){
         let starSrc = i < ratingStar ? starRed :starGray;
-        stars.push(<img style={{width: '20px'}} src={starSrc} alt="rating" /> )
+        stars.push(<img className='starDimension' key={i} src={starSrc} alt="rating" /> )
     }
 
   return (

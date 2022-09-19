@@ -18,6 +18,12 @@ const Button = styled.button`
   padding-right: 10px;
   font-size: 20px;
   cursor: pointer;
+  font-weight:500;
+  @media screen and (max-width: 500px){
+    width:90%;
+    height:40px;
+    font-size:18px;
+   }
   
 `
 const DescriptionDiv = styled.div`
@@ -26,6 +32,10 @@ const DescriptionDiv = styled.div`
   background-color:#F6F6F6;
   color: #FF6060;
   margin-bottom: 20px;
+  @media screen and (max-width: 500px){
+   height:max-content;
+   width:90%;
+  }
 `
 const DropDown = ({title,description, width, height, equipementBoolean}) => {
   const [isVisible,visibleChange] = useState(false);

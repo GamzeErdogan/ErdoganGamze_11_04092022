@@ -1,0 +1,10 @@
+.starDimension{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width: 500px){
+    .starDimension{
+        width: 15px;
+        height: 15px;
+    }
+}

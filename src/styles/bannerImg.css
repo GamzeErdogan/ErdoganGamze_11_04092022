@@ -7,11 +7,28 @@
 .bannerDiv-dimension img{
     border-radius: 25px;
     width: 100%;
+    object-fit: cover;
 }
 .title{
     color: white;
     position: absolute;
-    top:10%;
+    top:20%;
     left:25%;
     font-size: 55px;
+}
+@media screen and (max-width: 500px){
+    .bannerDiv-dimension{
+        /* width: 350px; */
+        height: 151px;
+    }
+    
+    .bannerDiv-dimension img{
+        height: 151px;
+    }
+    .title{
+        font-size: 36px;
+        text-align: left;
+       top: -10%;
+       left: 10px;
+    }
 }

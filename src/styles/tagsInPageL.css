@@ -8,4 +8,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+}
+@media screen and (max-width: 500px){
+    .tags{
+        width: 84px;
+        height: 18px;
+        font-size: 10px;
+    }
 }

@@ -3,23 +3,18 @@
     flex-direction: column;
     justify-content:flex-start;
     gap: 10px;
-    /* align-items: center; */
 }
 .colorTitle{
     color: #ff6060;
-    /* font-family: Montserrat; */
     font-size: 36px;
     font-weight: 500;
     line-height: 51px;
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 0;
-    font-weight: 100;
-    
 }
 .location{
     color: #ff6060;
-    font-family: Montserrat;
     font-size: 18px; 
     margin-top: 0;
 }
@@ -52,10 +47,42 @@
     justify-content: flex-start;
     gap: 10px;
     align-items: center; 
-    /* margin-left: 30px; */
 }
 .tagAndStarContainer{
     display: flex;
     justify-content: space-between;
     margin: 0 30px 0 30px;
+}
+@media screen and (max-width: 500px){
+    .flex{
+       position: relative;
+       margin: auto;
+    }
+    .hostRond-div{
+        position: absolute;
+        top:130px;
+        right: 10px;
+        margin-bottom: 50px;
+        gap: 0;
+    }
+    .tagAndStarContainer{
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    .tagsDiv{
+        margin-bottom:20px;
+    }
+    .colorTitle{
+        font-size: 18px;
+    }
+    .location{
+        font-size: 14px;
+    }
+    .rond{
+        width: 32px;
+        height: 32px;
+    }
+    .hostName{
+        font-size: 12px;
+    }
 }

@@ -15,7 +15,7 @@ const PageLogement = () => {
     <div>
         {
           datas?.filter((logement) => (logement.id)===(id)).map(cardItem =>{
-            return <SlideShow pictures={cardItem.pictures} data={cardItem}/>
+            return <SlideShow key={cardItem.id} pictures={cardItem.pictures} data={cardItem}/>
           })
         }
         

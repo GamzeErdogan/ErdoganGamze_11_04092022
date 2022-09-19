@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
-//   padding: 5px;
+  // padding: 5px;
   background-color:#ff6060;
   border-radius: 10px;
   width: 340px;
@@ -17,6 +17,11 @@ const CardWrapper = styled.div`
   &:hover {
     cursor: pointer;
     box-shadow: 2px 2px 10px #e2e3e9;
+ 
+  }
+  @media screen and (max-width: 500px){
+    width:335px;
+    height:255px;
   }
 `
 const CardImage = styled.img`
@@ -24,6 +29,10 @@ const CardImage = styled.img`
   height: 300px;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+  @media screen and (max-width: 500px){
+    width:335px;
+    height:215px;
+  }
 `
 const CardTitle = styled.span`
   color: black;
