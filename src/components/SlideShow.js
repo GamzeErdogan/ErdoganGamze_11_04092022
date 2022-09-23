@@ -38,7 +38,7 @@ const SlideShow = ({pictures, data}) => {
     <UnderSlide  cardItem={data}/>
     <div className='dropDownFlex'>
       <DropDown title='Description' width={'100%'} height={'180px'} description={data.description} />
-      <DropDown title='Equipements' width={'100%'} height={'180px'} description={data.equipments} equipementBoolean={true}/>
+      <DropDown title='Equipements' width={'100%'} height={'180px'} equipments={data.equipments} equipementBoolean={true}/>
     </div>
     
   </div>

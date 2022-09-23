@@ -3,6 +3,7 @@ import '../styles/dropdown.css'
 import upArrow from '../assets/upArrow.png'
 import down from '../assets/down.png'
 import styled from 'styled-components'
+import Equipements from './Equipement'
 
 const Button = styled.button`
   width: ${props => props.width}; 
@@ -37,9 +38,9 @@ const DescriptionDiv = styled.div`
    width:90%;
   }
 `
-const DropDown = ({title,description, width, height, equipementBoolean}) => {
+const DropDown = ({title,description,equipments, width, height, equipementBoolean}) => {
   const [isVisible,visibleChange] = useState(false);
-  
+
   return (
     <div className='dropdown--flex'>
           {
@@ -50,12 +51,10 @@ const DropDown = ({title,description, width, height, equipementBoolean}) => {
         
         {
           isVisible ? <DescriptionDiv width={width} height={height} className='dropdown--description'>
-          { equipementBoolean ? <p style={{whiteSpace: 'pre-wrap'}}>{description}</p>  : <p>{description}</p>}
-          
-      </DescriptionDiv> : null
+          { equipementBoolean ? <Equipements equipments={equipments}/>: <p>{description}</p>}
+          </DescriptionDiv> : null
         }
         
-    
     </div>
   )
 }

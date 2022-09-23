@@ -9,10 +9,10 @@
     height: 34px;
     text-decoration: none;
 }
-/* .nav-style a :active{
+.nav-style a :visited{
     text-decoration: underline;
     color:black;
-} */
+}
 
 .nav-flex{
     display: flex;

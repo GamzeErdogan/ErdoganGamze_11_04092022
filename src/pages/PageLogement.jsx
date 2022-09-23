@@ -8,6 +8,8 @@ import Loader from '../components/Loader';
 
 
 const PageLogement = () => {
+  debugger;
+  
     const {id} = useParams();
     const { loading, data:datas} = useContext(dataContext);
     if (loading) return <Loader />

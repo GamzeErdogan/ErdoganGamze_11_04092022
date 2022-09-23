@@ -39,7 +39,7 @@
 .hostRond-div{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
 }
 .tagsDiv{
