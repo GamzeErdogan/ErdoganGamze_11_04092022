@@ -19,7 +19,7 @@ function App() {
               <Route exact path="/" element={<Home />}/>
               <Route path="/propos" element={<PagePropos />}/>
               <Route path="/logement/:id" element={<PageLogement />}/>
-              <Route path="/*" element={<Page404 />}/>
+              <Route path="*" element={<Page404 />}/>
           </Routes>
           <Footer />
         </DataProvider>

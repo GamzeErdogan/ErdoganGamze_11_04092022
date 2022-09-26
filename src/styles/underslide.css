@@ -12,11 +12,13 @@
     letter-spacing: 0em;
     text-align: left;
     margin-bottom: 0;
+    font-family: "Montserrat";
 }
 .location{
     color: #ff6060;
     font-size: 18px; 
     margin-top: 0;
+    font-family: "Montserrat";
 }
 .flex{
     display: flex;
@@ -29,6 +31,7 @@
     width: 50px;
     font-size: 18px;
     color: #ff6060;
+    font-family: "Montserrat";
 }
 .rond{
     width: 64px;
@@ -52,6 +55,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 30px 0 30px;
+    font-family: "Montserrat";
 }
 @media screen and (max-width: 500px){
     .flex{

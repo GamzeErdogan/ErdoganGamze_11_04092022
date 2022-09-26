@@ -41,9 +41,11 @@ const CardTitle = styled.span`
   align-self: center;
 `
 const ContainerCard = ({id, image, title, location}) => {
+  
    
   return (
    <CardWrapper>
+      
         <Link to={"logement/" + id }>
             <CardImage src={image} alt={title} />
         </Link>

@@ -17,6 +17,7 @@ const ContainerLogementsDiv = styled.div`
     align-items: center;
     flex-wrap: wrap;
     border-radius: 15px;
+    font-family: "Montserrat";
 `
 function Home() {
   const {loading, data:datas } = useContext(dataContext);

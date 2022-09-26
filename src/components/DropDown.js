@@ -20,6 +20,7 @@ const Button = styled.button`
   font-size: 20px;
   cursor: pointer;
   font-weight:500;
+  font-family: "Montserrat";
   @media screen and (max-width: 500px){
     width:90%;
     height:40px;

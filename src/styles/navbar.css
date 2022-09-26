@@ -8,6 +8,7 @@
     width: 116px;
     height: 34px;
     text-decoration: none;
+    font-family: "Montserrat";
 }
 .nav-style a :visited{
     text-decoration: underline;

@@ -15,6 +15,7 @@
     top:20%;
     left:25%;
     font-size: 55px;
+    font-family: "Montserrat";
 }
 @media screen and (max-width: 500px){
     .bannerDiv-dimension{

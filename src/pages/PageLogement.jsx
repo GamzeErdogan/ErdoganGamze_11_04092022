@@ -4,23 +4,25 @@ import SlideShow from '../components/SlideShow';
 import { useContext } from 'react'
 import { dataContext } from '../context'
 import Loader from '../components/Loader';
-
-
+import Page404 from "./Page404";
 
 const PageLogement = () => {
-  debugger;
-  
-    const {id} = useParams();
-    const { loading, data:datas} = useContext(dataContext);
-    if (loading) return <Loader />
+
+  const {id} = useParams();
+  const { loading, data:datas} = useContext(dataContext);
+  const logements = datas?.filter((logement) => logement.id === id);
+  if (loading) return <Loader />
+  else if (!logements?.length ) {
+    return <Page404 />
+  }
+
   return (
     <div>
         {
-          datas?.filter((logement) => (logement.id)===(id)).map(cardItem =>{
+          logements.map(cardItem =>{
             return <SlideShow key={cardItem.id} pictures={cardItem.pictures} data={cardItem}/>
           })
         }
-        
     </div>
   )
 }
